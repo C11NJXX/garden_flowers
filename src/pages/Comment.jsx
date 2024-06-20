@@ -1,0 +1,12 @@
+import React from 'react';
+
+function Comment() {
+  return (
+    <div>
+      <h1>Comment Page</h1>
+      <p>Welcome to the Comment page.</p>
+    </div>
+  );
+}
+
+export default Comment;
