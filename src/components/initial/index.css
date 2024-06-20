@@ -1,0 +1,41 @@
+.initial {
+    grid-area: initial;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    gap: 10px;
+    text-align: center;
+}
+
+.description-initial,
+.img-initial {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.description-initial h2 {
+    font-size: 32px;
+}
+
+.description-initial p {
+    font-size: 18px;
+}
+
+.img-initial img {
+    width: 80%;
+    height: 80%;
+}
+
+@media (min-width: 800px) {
+    .initial {
+        flex-direction: row;
+    }
+
+    .img-initial img {
+        width: 100%;
+        height: 100%;
+    }
+}

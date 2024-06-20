@@ -1,0 +1,37 @@
+
+nav {
+    grid-area: nav;
+    background-color: #6b705c;
+}
+
+nav a:hover {
+    background-color: #403d39;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-list.aside-nav::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.nav-item {
+    display: block;
+    padding: 10px 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.nav-item.aside-nav{
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 201px;
+    display: block;
+    color: whitesmoke;
+}
