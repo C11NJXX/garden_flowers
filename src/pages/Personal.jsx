@@ -5,7 +5,7 @@ function Personal() {
     <div className='container'>
       <h1>Personal Page</h1>
       <p>Welcome to the Personal page.</p>
-      <p>Still Developing</p>
+      <p style={{color:"red"}}>Still Developing</p>
     </div>
   );
 }

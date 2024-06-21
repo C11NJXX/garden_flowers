@@ -2,22 +2,32 @@ import React, { useEffect, useState } from 'react';
 import './css/register.css';
 
 export default function Register() {
+    // 姓名和姓名检查
     const [username, setUsername] = useState('');
     const [usernameError, setUsernameError] = useState('');
+    // 年龄
     const [age, setAge] = useState('');
-    const [phone, setPhone] = useState('');
-    const [phoneError, setPhoneError] = useState({ length: '', format: '' });
-    const [email, setEmail] = useState('');
-    const [emailError, setEmailError] = useState('');
-    const [note, setNote] = useState('');
-    const [noteInfo, setNoteInfo] = useState('');
+    // 性别
+    const [sex, setSex] = useState('');
+    // 处理学院，根据对应学院渲染对应的专业
     const [school, setSchool] = useState('');
     const [major, setMajor] = useState('');
-    const [sex, setSex] = useState('');
-    const [favour, setFavour] = useState([]);
     const [majors, setMajors] = useState([]);
+    // 爱好
+    const [favour, setFavour] = useState([]);
+    // 电话号码和电话号码检查
+    const [phone, setPhone] = useState('');
+    const [phoneError, setPhoneError] = useState({ length: '', format: '' });
+    // 邮箱地址和邮箱地址检查
+    const [email, setEmail] = useState('');
+    const [emailError, setEmailError] = useState('');
+    // 备注框和备注框状态检测
+    const [note, setNote] = useState('');
+    const [noteInfo, setNoteInfo] = useState('');
+    // 在本页面展示提交表单的信息
     const [formResult, setFormResult] = useState('');
 
+    //当username改变时检查名称合法性
     useEffect(() => {
         if (username.length > 10) {
             setUsernameError('姓名长度不能超过10个字符 x');
@@ -27,7 +37,8 @@ export default function Register() {
             setUsernameError('');
         }
     }, [username]);
-
+    
+    //当电话号码改变时，检查电话号码合法性
     useEffect(() => {
         if (phone.length !== 11) {
             setPhoneError(prev => ({ ...prev, length: '电话号码长度错误 ×' }));
@@ -42,6 +53,7 @@ export default function Register() {
         }
     }, [phone]);
 
+    //当邮箱改变时，检查邮箱合法性
     useEffect(() => {
         const reg = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+$/;
         if (!reg.test(email)) {
@@ -51,10 +63,12 @@ export default function Register() {
         }
     }, [email]);
 
+    //当备注框内容改变时，显示还可以书写多少文字
     useEffect(() => {
         setNoteInfo(`${note.length}/40，剩余可输入${40 - note.length}个字符。`);
     }, [note]);
 
+    //当学院信息改变时，重新渲染下拉框选项
     useEffect(() => {
         const majorOptions = [
             ["软件工程", "计算机", "数字媒体"],
@@ -66,6 +80,7 @@ export default function Register() {
         }
     }, [school]);
 
+    //点击提交后,展示表单信息 event防止默认提交动作
     const handleFormSubmit = (ev) => {
         ev.preventDefault();
         setFormResult(`姓名：${username}<br>年龄：${age}<br>性别：${sex}<br>所在学院：${school}<br>所在专业：${major}<br>爱好：${favour.join(' ')}<br>电话号码：${phone}<br>电子邮件：${email}<br>备注：${note}`);

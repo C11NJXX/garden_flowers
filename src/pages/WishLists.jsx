@@ -1,5 +1,6 @@
-import React from 'react';
 import './css/wishList.css';
+
+// 引用实现redux所需的相关依赖
 import { useSelector, useDispatch } from 'react-redux';
 import { removeFromWishlist } from '../redux/actions';
 
