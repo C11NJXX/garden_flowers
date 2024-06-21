@@ -1,4 +1,5 @@
 .initial {
+    width: 1425px;
     grid-area: initial;
     display: flex;
     flex-direction: column;

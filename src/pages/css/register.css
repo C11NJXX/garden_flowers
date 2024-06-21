@@ -1,0 +1,73 @@
+
+.contenedor-register {
+    background-color: #ffffff;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor-register h3 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.box {
+    padding: 20px;
+}
+
+form {
+    display: grid;
+    gap: 15px;
+}
+
+.item {
+    display: grid;
+    gap: 10px;
+}
+
+label {
+    font-size: 18px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button[type="submit"] {
+    background-color: #403d39;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #6b705c;
+}
+
+span {
+    color: red;
+    font-size: 14px;
+}

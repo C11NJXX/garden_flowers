@@ -1,0 +1,122 @@
+.ficha-flor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: beige;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.detalles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.foto-flor img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.compra-flor {
+    text-align: center;
+    width: 100%;
+}
+
+.compra-flor h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.compra-flor p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cantidad,
+.ubicacion {
+    margin-bottom: 20px;
+}
+
+.cantidad label,
+.ubicacion label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.cantidad input,
+.ubicacion select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.botones button {
+    background-color: #6b705c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.botones button:hover {
+    background-color: #403d39;
+}
+
+.descripcion {
+    margin-top: 20px;
+    text-align: left;
+    width: 100%;
+    max-width: 800px;
+}
+
+.descripcion h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.descripcion p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.wishlist-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.wishlist-button img {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.wishlist-button:hover {
+    background-color: #e6b800;
+}

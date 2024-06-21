@@ -1,0 +1,73 @@
+/* 样式调整主内容 */
+.catalog {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* 产品列表标题 */
+.catalog h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* 产品容器 */
+.content-products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* 单个产品项 */
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+/* 悬停效果 */
+.product:hover {
+    transform: translateY(-10px);
+}
+
+.product:hover img {
+    transform: scale(1.05);
+}
+
+/* URL 网站链接 */
+.url-site {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+}
+
+.url-site a {
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px dashed #333;
+}
+
+.url-site a:hover {
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+h3 {
+    text-align: center;
+}

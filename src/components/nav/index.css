@@ -1,37 +1,61 @@
-
+/* 导航栏样式 */
 nav {
     grid-area: nav;
     background-color: #6b705c;
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    padding: 10px; /* 导航栏的上下内边距，确保其不太高 */
 }
 
+/* 导航链接悬停样式 */
 nav a:hover {
     background-color: #403d39;
 }
 
+/* 导航列表样式 */
 .nav-list {
     list-style: none;
+    display: flex; /* 使用 flex 布局 */
+    justify-content: center; /* 水平居中 */
+    padding: 0;
+    margin: 0;
 }
 
-.nav-list.aside-nav::after{
+/* 单个导航项样式 */
+.nav-item {
+    display: block;
+    padding: 10px 20px; /* 内边距，确保每个选项不太宽 */
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 15px; /* 圆滑效果 */
+    transition: background-color 0.3s, transform 0.3s; /* 平滑过渡效果 */
+}
+
+/* 带有 .aside-nav 的导航列表样式 */
+.nav-list.aside-nav {
+    width: 100%; /* 确保导航列表占满整个宽度 */
+    justify-content: center; /* 水平居中 */
+}
+
+.nav-list.aside-nav::after {
     content: '';
     display: block;
     clear: both;
 }
 
-.nav-item {
-    display: block;
-    padding: 10px 5px;
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
+/* 带有 .aside-nav 的单个导航项样式 */
+.nav-item.aside-nav {
+    margin: 10px 15px; /* 上下和左右的间距 */
+    text-align: center;
+    width: auto; /* 自动宽度，根据内容调整 */
+    background: paleturquoise;
+    color: black;
+    border-radius: 15px; /* 圆滑效果 */
 }
 
-.nav-item.aside-nav{
-    float: left;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    text-align: center;
-    width: 201px;
-    display: block;
-    color: whitesmoke;
+.nav-item.aside-nav:hover {
+    background-color: #403d39; /* 悬停背景颜色 */
+    color: white; /* 悬停时文字颜色 */
+    transform: scale(1.05); /* 悬停时稍微放大 */
 }

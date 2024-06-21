@@ -1,0 +1,81 @@
+/* wishlist.css */
+.wishlist{
+  margin: 20px auto;
+}
+/* wishlist.css */
+
+.wishlist-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* 文本居中 */
+}
+
+.wishlist-header {
+  margin-bottom: 15px;
+}
+
+.wishlist-title {
+  font-size: 24px;
+}
+
+.wishlist-message {
+  font-size: 18px;
+  color: #888;
+}
+
+.wishlist-list {
+  padding: 0;
+  text-align: center; /* 将 ul 内容居中 */
+}
+
+.wishlist-item {
+  display: inline-block; /* 将 li 元素转为行内块级元素 */
+  margin: 0 10px; /* 调整每个项目之间的间距 */
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden; /* 清除浮动用 */
+  text-align: left; /* li 内容左对齐 */
+  vertical-align: top; /* 竖直方向顶部对齐 */
+  width: calc(33.33% - 20px); /* 设置每个项目的宽度，适配三栏的设计 */
+  box-sizing: border-box; /* 盒模型设置为边界框 */
+}
+
+.wishlist-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px; /* 调整图片与其他内容之间的间距 */
+}
+
+.wishlist-item-details {
+  overflow: hidden; /* 清除浮动用 */
+}
+
+.wishlist-item-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.wishlist-item-remove {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.wishlist-item-remove:hover {
+  background-color: #c82333;
+}

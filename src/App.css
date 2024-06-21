@@ -12,7 +12,8 @@ body {
 }
 
 .container-principal {
-    display: grid;
+    display: block;
+    /* display: grid;
     min-height: 100%;
     grid-template-rows: max-content max-content max-content auto max-content;
     grid-template-areas:
@@ -20,7 +21,7 @@ body {
         "nav"
         "initial"
         "main"
-        "footer";
+        "footer"; */
 }
 
 .options-header .nav-list {

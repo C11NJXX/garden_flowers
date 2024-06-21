@@ -1,0 +1,71 @@
+/* 表单容器样式 */
+.contenedor-contact {
+    width: 80%;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 40px 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    border: 2px solid #403d39;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* 表单标题 */
+.contenedor-contact h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* 表单输入和文本区域样式 */
+.contenedor-contact input,
+.contenedor-contact textarea {
+    width: 100%;
+    display: block;
+    margin: 15px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.contenedor-contact input[type="text"],
+.contenedor-contact input[type="tel"],
+.contenedor-contact textarea {
+    border: none;
+    border-bottom: 2px solid #000000;
+}
+
+/* 鼠标悬停和焦点状态下的输入框样式 */
+.contenedor-contact input:focus,
+.contenedor-contact textarea:focus {
+    border-bottom-color: #403d39;
+}
+
+/* 文本区域高度调整 */
+.contenedor-contact textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+/* 提交按钮样式 */
+.contenedor-contact input[type="submit"] {
+    background-color: #403d39;
+    width: 50%;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    margin: 0px auto;
+}
+
+/* 提交按钮悬停状态 */
+.contenedor-contact input[type="submit"]:hover {
+    background-color: #5c5c5c;
+}

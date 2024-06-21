@@ -1,6 +1,10 @@
 import './index.css'
+
 import flower from "../../resources/img/flores-detalle.jpg"
 import pot from "../../resources/img/maceta-detalle.jpg"
+
+import { Link } from 'react-router-dom'
+
 export default function Container_details() {
     return (
         <div className="container-details">
@@ -13,7 +17,7 @@ export default function Container_details() {
             </div>
             <div className="photo-flowers">
                 {/* <!-- TODO:此处要使用路由实现 --> */}
-                <a href="#"><img src={flower} title="Flowers" /></a>
+                <Link to="/catalog"><img src={flower} title="Flowers" /></Link>
             </div>
             <div className="description description-pots">
                 <h3>Pots</h3><br />
@@ -24,7 +28,7 @@ export default function Container_details() {
             </div>
             <div className="photo-pots">
                 {/* <!-- TODO:此处要使用路由实现 --> */}
-                <a href="#"><img src={pot} title="Pots" /></a>
+                <Link to="/catalog"><img src={pot} title="Pots" /></Link>
             </div>
         </div>
     )
